@@ -1,0 +1,23 @@
+.{
+    .name = .level_editor,
+    .version = "0.0.0",
+    .fingerprint = 0xb547901b26a2ad1b, // Changing this has security and trust implications.
+    .minimum_zig_version = "0.14.0",
+
+    .dependencies = .{
+        .cimgui = .{
+            .url = "git+https://github.com/floooh/dcimgui.git#716dae9c6a03eec642a4fb2ac28ebcd2f52f76ba",
+            .hash = "cimgui-0.1.0-44ClkYmBhgC-Q3NWFyYqwThmmTdmkoIlAjF4ABfyqIAZ",
+        },
+        .sokol = .{
+            .url = "git+https://github.com/floooh/sokol-zig.git#01bde5a6cf5d934948a1c6e60483e4ab75524891",
+            .hash = "sokol-0.1.0-pb1HK2CJLADmYmRGXRmmpsf17gPLJ0MLAT06psMvPK5f",
+        },
+    },
+
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+    },
+}
